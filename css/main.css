@@ -328,6 +328,22 @@ a:hover {
   transition: 0.7s;
 }
 
+.move {
+  position: absolute;
+  top: 470%;
+  left: -50%;
+  z-index: -15;
+  width: 400px;
+  height: 250px;
+}
+
+.move__carrot {
+  left: 250%;
+  top: 350%;
+  width: 300px;
+  height: 200px;
+}
+
 .block {
   padding: 0 15%;
 }
@@ -470,7 +486,7 @@ a:hover {
 .wrapper__content-img {
   position: absolute;
   left: 120%;
-  top: -60%;
+  top: -105%;
   height: 500px;
   width: 700px;
 }
