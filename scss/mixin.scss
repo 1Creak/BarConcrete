@@ -1,0 +1,24 @@
+@mixin menu-size{
+    @media screen and (min-width:767px) {
+        a{
+            font-size: calc(18px + 10 (16 + 16 * 0.7) * ((100vw - 320px) / 1280));
+        }
+    }
+}
+
+@mixin btn($color:#513C25, $border:#513C25, $bgBtn: transparent, $hover: #e79314){
+    background-color: $bgBtn;
+    border: 3px groove $border;
+    padding: 25px 90px;
+    text-transform: uppercase;
+    color: $color;
+    transition: 0.7s;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    &:hover{
+        background-color: #00000070;
+        border: 3px $hover groove;
+        transition: 0.7s;
+        color: $hover;
+    }
+}

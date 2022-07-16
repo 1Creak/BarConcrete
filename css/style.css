@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'icomoon';
+  src:
+    url('../icons/icomoon.ttf') format('ttf'),
+    url('../icons/icomoon.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Tilda_Icons_7cafe_map:before {
+  content: "\e900";
+}
+.icon-Tilda_Icons_11mu_clock:before {
+  content: "\e901";
+}
+.icon-tray:before {
+  content: "\e902";
+}
+.icon-email-svgrepo-com:before {
+  content: "\e903";
+  font-size: 55px;
+  color: white;
+  transition: 0.6s;
+}
+.icon-instagram-svgrepo-com:before {
+  content: "\e904";
+  font-size: 45px;
+  color: white;
+  transition: 0.6s;
+}
+.icon-logo-1:before {
+  content: "\e905";
+}
+.icon-phone-svgrepo-com:before {
+  content: "\e906";
+  font-size: 45px;
+  color: white;
+  transition: 0.6s;
+}
+
+
+.icon-phone-svgrepo-com:hover::before{
+  color: #e79314;
+  transition: 0.6s;
+}
+.icon-instagram-svgrepo-com:hover:before{
+  color: #e79314;
+  transition: 0.6s;
+}
+.icon-email-svgrepo-com:hover:before{
+  color: #e79314;
+  transition: 0.6s;
+}
+
