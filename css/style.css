@@ -23,6 +23,34 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon--1-14:before {
+  content: "\e907";
+  font-size: 120px;
+}
+.icon--1-13:before {
+  content: "\e908";
+  font-size: 120px;
+}
+.icon---1-11:before {
+  content: "\e909";
+  font-size: 120px;
+}
+.icon--1-12:before {
+  content: "\e90a";
+  font-size: 120px;
+}
+.icon---1-1:before {
+  content: "\e90b";
+  font-size: 120px;
+}
+.icon--1-11:before {
+  content: "\e90c";
+  font-size: 120px;
+}
+.icon--1-1:before {
+  content: "\e90d";
+  font-size: 120px;
+}
 .icon-Tilda_Icons_7cafe_map:before {
   content: "\e900";
 }
@@ -34,37 +62,16 @@
 }
 .icon-email-svgrepo-com:before {
   content: "\e903";
-  font-size: 55px;
-  color: white;
-  transition: 0.6s;
+  font-size:55px;
 }
 .icon-instagram-svgrepo-com:before {
   content: "\e904";
-  font-size: 45px;
-  color: white;
-  transition: 0.6s;
+  font-size:45px;
 }
 .icon-logo-1:before {
   content: "\e905";
 }
 .icon-phone-svgrepo-com:before {
   content: "\e906";
-  font-size: 45px;
-  color: white;
-  transition: 0.6s;
+  font-size:45px;
 }
-
-
-.icon-phone-svgrepo-com:hover::before{
-  color: #e79314;
-  transition: 0.6s;
-}
-.icon-instagram-svgrepo-com:hover:before{
-  color: #e79314;
-  transition: 0.6s;
-}
-.icon-email-svgrepo-com:hover:before{
-  color: #e79314;
-  transition: 0.6s;
-}
-

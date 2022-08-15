@@ -2,6 +2,13 @@
 @import 'mixin';
 @import 'fonts';
 // background-attachment: fixed; // задний не двиг
+body{
+    background-image: url(../img/bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    float: left;
+    width: 100%;
+}
 html::-webkit-scrollbar {
     width: 0;
   }
@@ -27,6 +34,15 @@ a{
         transition: 0.7s;
     }
 }
+li{
+    font-family: 'Anton', sans-serif;
+    &:hover{
+        color: #e79314;
+        transition: 0.7s;
+        cursor: pointer;
+    }
+}
+
 .move{
     position: absolute;
     top: 470%;
@@ -35,7 +51,7 @@ a{
     width: 400px;
     height: 250px;
     &__carrot{
-        left: 250%;
+        left: 240%;
         top: 350%;
         width: 300px;
         height: 200px;
@@ -113,7 +129,7 @@ a{
         top: 50%;
         position: absolute;
         color: #fff;
-        z-index: 2;
+        z-index: 5;
         &-title{
             font-family: 'Anton', sans-serif;
             font-size: 48px;
@@ -144,6 +160,7 @@ a{
     background-image: url(../img/bgblock.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 4;
     &-btn{
         @include btn($bgBtn:white, $border:white);
     }
@@ -163,6 +180,7 @@ a{
 }
 .footer{
     background-image: url(../img/footer.jpg);
+    margin-top: 200px;
     &__wrapper{
         display: flex;
         justify-content: space-between;
@@ -191,5 +209,63 @@ a{
             font-size: 18px;
             border-bottom: 1px solid white;
         }
+    }
+}
+//////////////////////////////////
+.header{
+    &__menu-bg{
+        filter: blur(4px);
+    }
+    &__menu-title{
+        @include title();
+    }
+}
+.menu{
+    // background-image: url(../img/bg.jpg);
+    // background-attachment: fixed;
+    // background-size: cover;
+    // float: left;
+    // width: 100%;
+    // height: 100vh;
+    // margin-top: -4px;
+    &__nav{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        text-align: center;
+        color: white;
+        padding-top: 40px;
+    }
+}
+.menu__list{
+    display: grid;
+    gap: 100px 30px;
+    grid-template-columns: repeat(3, 31.5%);
+    margin-top: 100px;
+    &-item{
+        background-image: url(../img/paper.jpg);
+        text-align: center;
+        & img{
+            width: 100%;
+            height: auto;
+        }
+        & button{
+            padding: 12px 90px;
+            margin: 20px;
+        }
+        & p{
+            font-family: 'Russo One', sans-serif;
+            font-size: 17px;
+            max-width: 60%;
+            margin: 0 auto;
+            color: #513C25;
+        }
+    }
+}
+////////////////////
+.about{
+    &__bg{
+        width: 100%;
+        height: 90vh;
+        filter: brightness(0.4);
     }
 }

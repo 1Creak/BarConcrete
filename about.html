@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./img/logo.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bar Concrete</title>
+</head>
+<body>
+    <header class="header">
+        <ul class="header__nav block header">
+            <li class="header__nav-item"><img src="./img/logo.png" alt="logo"></li>
+            <li class="header__nav-item"><a href="./index.html">Home</a></li>
+            <li class="header__nav-item"><a href="./menu.html">Menu</a></li>
+            <li class="header__nav-item"><a href="./about.html">About</a> </li>
+            <li class="header__nav-item"><a href="#">Contact</a></li>
+            <li class="header__nav-item"><a href="#">3D Tur</a></li>
+            <li class="header__nav-item"><img class="basket" src="./img/tray.png" alt=""></li>
+        </ul>
+        <img class="about__bg" src="./img/bgabout.webp" alt="">
+        <div class="header__block block">
+            <h1>About Bar Concrete</h1>
+            <button class="header__block-btn">Read</button>
+        </div>
+    </header>
+    <section>
+        <div class="container__bg"></div>
+            <div class="wrapper block">
+                <div class="wrapper__content">
+                    <h2 class="wrapper__content-title">NEW MENU</h2>
+                    <p class="wrapper__content-text">The choice is easy when it's real food.<br>
+                        Eat real. Feel real.</p>
+                    <button class="wrapper__content-btn">View Menu</button>
+                    <img class="wrapper__content-img rellax" src="./img/steak.png" alt="" data-rellax-speed="-2">
+                    <img src="./img/meat.png" alt="" class="move rellax" data-rellax-speed="3">
+                </div>
+            </div>
+    </section>
+    <script src="js/rellax.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax');
+    </script>
+</body>
+</html>

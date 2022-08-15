@@ -22,3 +22,9 @@
         color: $hover;
     }
 }
+@mixin title($color:white){
+    font-size: 48px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    color: $color;
+}
